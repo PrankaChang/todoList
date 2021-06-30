@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&family=Noto+Sans+TC:wght@100;300&display=swap");
+
+//font-family: 'Baloo Tamma 2', cursive;
+//font-family: 'Noto Sans TC', sans-serif;
+//font-family: 'Noto Sans TC', sans-serif;
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: $secColor;
+
+  background: no-repeat
+    linear-gradient(
+      174deg,
+      #ffd370 2%,
+      #ffd370 46%,
+      #ffffff 46%,
+      #ffffff 100%,
+      #e8e8e8 100%
+    );
+}
+
+h1 {
+  font-family: "Baloo Tamma 2", cursive, sans-serif;
+  font-size: 48px;
+  line-height: 82px;
+  font-weight: bold;
+  letter-spacing: 8.75px;
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: $white;
+}

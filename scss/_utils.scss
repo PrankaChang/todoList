@@ -1,0 +1,120 @@
+//容器
+.container {
+  max-width: 530px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 40px 15px;
+}
+
+.box {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 4px;
+  background-color: $white;
+}
+//styles
+.mb-1 {
+  margin-bottom: 8px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.text-mainColor {
+  color: $mainColor;
+}
+
+.text-secColor {
+  color: $secColor;
+}
+
+.text-thirdColor {
+  color: $thirdColor;
+}
+.line-throw {
+  text-decoration: line-through;
+}
+
+//元件
+.btn {
+  border-radius: 10px 10px 0px 0px;
+
+  border-bottom: 2px solid $thirdColor;
+  width: 33.33%;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  color: $thirdColor;
+  padding: 15px 0;
+  &:hover {
+    color: $secColor;
+    border-color: $secColor;
+  }
+}
+
+.active {
+  color: $secColor;
+  border-color: $secColor;
+  cursor: none;
+}
+
+//page
+.addNew {
+  display: flex;
+  min-height: 48px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 2px 5px;
+  .txt {
+    width: 440px;
+    border: none;
+  }
+}
+.save {
+  width: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: $secColor;
+  color: $white;
+  &:hover {
+    background-color: lighten($secColor, 10%);
+  }
+}
+
+.delete {
+  display: none;
+}
+.list {
+  li {
+    display: flex;
+    align-items: center;
+    padding: 0px 24px;
+    button {
+      width: 10%;
+    }
+
+    p {
+      width: 80%;
+      padding: 15px 5px;
+      border-bottom: 1px solid $lighterGray;
+    }
+    &:hover {
+      .delete {
+        display: block;
+      }
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  .deleteAll {
+    padding: px 0;
+    color: $thirdColor;
+    &:hover {
+      color: $secColor;
+    }
+  }
+}
